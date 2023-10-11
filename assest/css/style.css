@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Header Section Start */
+a{
+    color: #fff;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    padding: 0px 125px;
+    background: #131E3A;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul li{
+    margin-right: 15px;
+    display: inline-block;
+}
+header ul li a{
+    font-weight: 600;
+}
+/* Header Section End */
+
+ 
