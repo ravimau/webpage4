@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
 }
-/* Header Section Start */
 a{
     color: #fff;
     text-decoration: none;
 }
+h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Header Section Start */
 header{
     width: 100%;
     height: 60px;
@@ -16,6 +25,7 @@ header{
     padding: 0px 125px;
     background: #131E3A;
     align-items: center;
+    font-weight: 300;
     justify-content: space-between;
 }
 header ul li{
@@ -25,6 +35,325 @@ header ul li{
 header ul li a{
     font-weight: 600;
 }
+header ul li a.active{
+    color:#ff4f7b;
+}
 /* Header Section End */
 
- 
+/* Banner Section Start */
+.banner{
+    width: 100%;
+    height: 650px;
+    color: #fff;
+    padding: 0px 125px;
+    background: linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)),url(../img/banner.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.banner h1{
+    top:100px;
+    font-size: 50px;
+    position: absolute;
+    font-weight: normal;
+}
+.banner h2{
+    top: 230px;
+    font-size: 30px;
+    position: absolute;
+}
+.banner form{
+    width: 84%;
+    bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 8px;
+    position: absolute;
+    align-items: center;
+    background: #5C327A;
+}
+.banner form button{
+    width: 90px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background: #43215c;
+}
+.banner form button.active{
+    background: #FC2D4B;
+}
+.banner form label{
+    display: none;
+}
+.banner form .searchForm{
+    margin-top: 8px;
+}
+.banner form .searchForm input,
+.banner form .searchForm select{
+    width: 18%;
+    height: 35px;
+    margin-right: 5px
+}
+.banner form button.smt{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+/* Banner Section End */
+
+/* Fun Sectin Start */
+.fun{
+    width: 100%;
+    height: 400px;
+    padding: 50px 125px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../img/banner2.jpg);
+    background-size: 100% 100%;
+}
+.fun h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.fun ul{
+    display: flex;
+    justify-content:space-between;
+}
+.fun ul li{
+    width: 130px;
+    height: 125px;
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.7);
+}
+/* Fun Sectin End */
+
+/* Newslatter Section Start */
+.newslatter{
+    width: 100%;
+    padding: 50px 125px;
+    background: #43215c;
+}
+/* Newslatter Section End */
+
+/* Destination Section Start */
+.destination{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 50px 125px;
+    background: #20162F;
+}
+.destination ul{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: 400px 400px;
+    grid-gap: 30px;
+}
+.destination ul li{
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    border: 5px solid #fff;
+}
+.destination ul li img{
+    width: 100%;
+}
+.destination ul li div.content{
+    color:#000;
+    padding: 20px;
+}
+div.content span{
+    color: #DD6D58;
+}
+/* Destination Section End */
+
+/* Estimate section start */
+.estimate{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 125px;
+    background-color: #664CAD;
+    /* background-color: #FE9102; */
+}
+.estimate label{
+    display: none;
+}
+.estimate img{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* /Estimate section end */
+
+/* Blog Section Start */
+.blog{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+}
+.blog h2{
+    color: #000;
+    margin-bottom: 10px;
+}
+.blog h2+p{
+    text-align: center;
+    padding: 0px 200px;
+}
+.blog-content{
+    margin: 10px auto;
+    display: flex;
+}
+.blog-content div{
+    display: flex;
+    padding: 10px;
+}
+.blog-content div img{
+    width: 150px;
+    height: 150px;
+}
+.blog-content div div{
+    display: inline-block;
+}
+.blog-content div .bdr{
+    border-bottom: 5px red solid;
+    
+}
+/* Blog Section end */
+
+/* footer section start */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+                url(../img/banner2.jpg);
+}
+footer .topfoot, footer .bottomfooter{
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    color: #918E97;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    color: #918E97;
+}
+footer ul li a span{
+    color: #fff;
+    font-weight: 500;
+}
+footer .international div{
+    display: flex;
+    justify-content: space-between;
+}
+footer .international div .inter1{
+    margin-right: 50px;
+}
+footer .bottomfooter .footmenu ul li{
+    display: inline-block;
+}
+/* footer section end */
+
+/* Media Query Section Start */
+@media screen and (max-width:1199px) {
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .banner form {
+        width: 86%;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        width: 17%;
+    }
+    .banner form button.smt {
+        float: right !important;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .fun ul li {
+        width: 105px;
+        height: 115px;
+        font-size: 35px;
+    }
+    .blog-content {
+        display: block;
+    }
+    footer .topfoot .left,
+    footer .topfoot .right{
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px){
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    header .nav{
+        display: none;
+    }
+    .banner form {
+        width: auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        left: 25%;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        display: block;
+        width: 100%;
+    }
+    .banner form .searchForm span{
+        display: none;
+    }
+    .banner form button.smt {
+        width: 280px;
+        height: 35px;
+        border-radius: 0px;
+        margin: 10px auto;
+    }
+    .fun ul {
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 130px 130px;
+        grid-gap: 10px;
+    }
+    .destination ul {
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: 400px 400px 400px 400px;
+    }
+}
+@media screen and (max-width:575px){
+    
+}
+/* Media Query Section End */
